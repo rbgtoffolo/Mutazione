@@ -792,7 +792,17 @@ s.waitForBoot({
 	w.front;
 
 	// encerrando janela e synth
-	w.onClose = {	mSyn.free;
+	w.onClose = {	
+
+~sensor.free;
+		~b1Sensor.free;
+		~b3Sensor.free;
+		~b4Sensor.free;
+		~b5Sensor.free;
+		~b6Sensor.free;
+		~b7Sensor.free;
+
+		mSyn.free;
 		chord1Syn.free;
 		cleanSyn.free;
 		vocoderSyn.free;
